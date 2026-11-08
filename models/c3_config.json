@@ -1,0 +1,29 @@
+{
+  "version": "C3_exploratory_v1",
+  "status": "UNVALIDATED_HEURISTICS",
+  "image_space": "RGB uint8",
+  "feature_names": [
+    "contrast_rms",
+    "contrast_p95_p5",
+    "mean_luma",
+    "median_luma",
+    "p05_luma",
+    "p95_luma",
+    "dark_ratio",
+    "bright_ratio",
+    "illumination_range",
+    "illumination_cv",
+    "quadrant_mean_range"
+  ],
+  "thresholds": {
+    "max_low_contrast_rms": 0.075,
+    "max_low_contrast_range": 0.22,
+    "min_uneven_illumination_range": 0.2,
+    "min_uneven_quadrant_range": 0.18,
+    "min_underexposed_mean": 0.27,
+    "max_overexposed_mean": 0.78,
+    "max_dark_ratio": 0.12,
+    "max_bright_ratio": 0.1
+  },
+  "notes": "Seuils heuristiques provisoires; validation manuelle indispensable avant activation automatique."
+}

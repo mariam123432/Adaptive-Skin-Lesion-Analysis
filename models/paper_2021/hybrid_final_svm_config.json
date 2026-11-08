@@ -1,0 +1,16 @@
+{
+  "C": 0.1,
+  "kernel": "rbf",
+  "classes": [
+    "MEL",
+    "NV",
+    "BCC",
+    "AKIEC",
+    "BKL",
+    "DF",
+    "VASC"
+  ],
+  "val_balanced_accuracy": 0.7850993227552626,
+  "feature_source": "two_hybrid_CNN_embeddings_512x2",
+  "manual_features": "adapted_handcrafted200"
+}

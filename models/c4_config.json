@@ -1,0 +1,22 @@
+{
+  "blur_laplacian_max": 87.82807312011718,
+  "blur_tenengrad_max": 181.771337890625,
+  "noise_mad_min": 1.4825999736785889,
+  "noise_wavelet_min": 0.7413011193275452,
+  "status": "EXPERIMENTAL_UNVALIDATED",
+  "strategy": "AND for two blur measures; AND for two noise measures",
+  "calibration": "quantiles 20/80 on TRAIN, provisional only",
+  "native_resolution": true,
+  "feature_names": [
+    "laplacian_variance",
+    "tenengrad",
+    "noise_mad",
+    "wavelet_sigma",
+    "mean_luminance",
+    "luminance_std",
+    "width",
+    "height"
+  ],
+  "dataset": "ISIC2018 Task1 Training Input",
+  "warning": "DO NOT interpret predictions as verified ground truth or turn on automatic correction."
+}

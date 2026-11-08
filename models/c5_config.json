@@ -1,0 +1,38 @@
+{
+  "task": "C5_peripheral_artifacts",
+  "feature_names": [
+    "gray_mean",
+    "gray_std",
+    "edge_ratio",
+    "edge_periphery_ratio",
+    "hough_lines_count",
+    "hough_total_length",
+    "hough_max_length",
+    "hough_peripheral_fraction",
+    "hough_axis_fraction",
+    "corner_mean",
+    "center_mean",
+    "corner_center_ratio",
+    "dark_corner_fraction",
+    "dark_border_fraction",
+    "dark_center_fraction",
+    "corner_asymmetry",
+    "periphery_brightness_std",
+    "dark_component_ratio"
+  ],
+  "feature_extractor_max_side": 384,
+  "training_seed": 42,
+  "sklearn_version": "1.6.1",
+  "labels": {
+    "ruler": {
+      "file": "c5_ruler.joblib",
+      "model": "RandomForest",
+      "threshold": 0.5400000000000001
+    },
+    "dark_corner": {
+      "file": "c5_dark_corner.joblib",
+      "model": "ExtraTrees",
+      "threshold": 0.5500000000000002
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "task": "C2_gel",
+  "feature_names": [
+    "gray_mean",
+    "gray_std",
+    "gray_p10",
+    "gray_p90",
+    "sat_mean",
+    "sat_std",
+    "val_mean",
+    "val_std",
+    "edge_ratio",
+    "tophat_mean",
+    "tophat_p95",
+    "circle_count",
+    "circle_density",
+    "circle_mean_radius",
+    "components_count",
+    "component_mean_circularity",
+    "edge_mean",
+    "center_mean",
+    "edge_center_diff",
+    "edge_std",
+    "edge_edge_ratio",
+    "border_dark_ratio"
+  ],
+  "image_size": [
+    256,
+    256
+  ],
+  "labels": {
+    "gel_bubble": {
+      "filename": "c2_gel_bubble.joblib",
+      "algorithm": "SVM_RBF",
+      "threshold": 0.29988006764455793
+    },
+    "gel_border": {
+      "filename": "c2_gel_border.joblib",
+      "algorithm": "RandomForest",
+      "threshold": 0.5350426459475833
+    }
+  },
+  "split_seed": 42,
+  "notes": "Labels Bissoto gel_bubble / gel_border; two independent classifiers."
+}

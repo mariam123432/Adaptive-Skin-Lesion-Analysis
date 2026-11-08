@@ -1,0 +1,21 @@
+{
+  "model": "SVM RBF",
+  "class": "C1_hair",
+  "threshold": 0.36796454589432065,
+  "feature_names": [
+    "gray_mean",
+    "gray_std",
+    "blackhat_mean",
+    "blackhat_std",
+    "blackhat_p90",
+    "blackhat_p95",
+    "blackhat_p99",
+    "candidate_pixel_ratio",
+    "component_count",
+    "mean_component_area",
+    "max_component_area",
+    "mean_elongation",
+    "max_elongation",
+    "linear_component_area_ratio"
+  ]
+}

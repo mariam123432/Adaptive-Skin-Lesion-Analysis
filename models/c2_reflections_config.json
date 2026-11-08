@@ -1,0 +1,9 @@
+{
+  "v_min": 225,
+  "s_max": 75,
+  "tophat_min": 16,
+  "min_area": 8,
+  "max_region_ratio": 0.005,
+  "max_total_ratio": 0.015,
+  "tophat_kernel": 17
+}

@@ -1,0 +1,38 @@
+{
+  "task": "classification",
+  "status": "complete",
+  "selected": [
+    "ISIC_0026089"
+  ],
+  "audit": {
+    "split_file": "C:\\Users\\ASUS\\Desktop\\Adaptive-Skin-Lesion-Analysis_structure_locale\\Adaptive-Skin-Lesion-Analysis-ready\\results\\paper_2021\\task3_splits.csv",
+    "all_test": true,
+    "generalization_eligible": false,
+    "message": "Identifiants vérifiés dans la partition test exportée ; sous-ensemble local.",
+    "membership": {
+      "ISIC_0026089": [
+        "test"
+      ]
+    },
+    "duplicate_ids": [],
+    "lesion_leaks": [],
+    "metadata_file": null,
+    "metadata_status": "Regroupements par lésion non vérifiés : métadonnées absentes.",
+    "split_sha256": "573affa0281f782fe828488db657ba9d503d9cc4d7292b4f1cfd933452651646"
+  },
+  "scope": "Sous-ensemble local sélectionné, pas une performance finale du test complet.",
+  "empty_masks_convention": "Both empty: Dice=IoU=1; no smoothing",
+  "completed": [
+    "ISIC_0026089"
+  ],
+  "duplicate_pixels": [],
+  "inputs": {
+    "ISIC_0026089": {
+      "image": "C:\\Users\\ASUS\\Desktop\\Adaptive-Skin-Lesion-Analysis_structure_locale\\Adaptive-Skin-Lesion-Analysis-ready\\test_images\\classification\\images\\ISIC_0026089.jpg",
+      "image_sha256": "04708934435b6cea7c85e1a73df1992de2206f5e2facc7e54cd20c348e60dd77",
+      "true_class": "MEL",
+      "annotation_csv": "C:\\Users\\ASUS\\Desktop\\Adaptive-Skin-Lesion-Analysis_structure_locale\\Adaptive-Skin-Lesion-Analysis-ready\\test_images\\classification\\ground_truth.csv",
+      "annotation_csv_sha256": "c57c40d1e54d60098da335e3afa5dc693f2ddcf9ee3ca2c47a07fdc940a8a750"
+    }
+  }
+}

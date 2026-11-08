@@ -1,0 +1,25 @@
+# Python environments
+.venv/
+.venv-*/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Datasets
+datasets/
+datasets_zip/
+*.zip
+
+# Trained models
+*.pth
+*.pt
+*.joblib
+*.ckpt
+
+# Temporary files
+.ipynb_checkpoints/
+outputs/cache/

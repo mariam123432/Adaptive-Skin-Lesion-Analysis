@@ -1,0 +1,35 @@
+{
+  "task": "segmentation",
+  "count": 1,
+  "audit": {
+    "split_file": "C:\\Users\\ASUS\\Desktop\\Adaptive-Skin-Lesion-Analysis_structure_locale\\Adaptive-Skin-Lesion-Analysis-ready\\results\\paper_2021\\task1_splits.csv",
+    "all_test": true,
+    "generalization_eligible": false,
+    "message": "Identifiants vérifiés dans la partition test exportée ; sous-ensemble local.",
+    "membership": {
+      "ISIC_0000034": [
+        "test"
+      ]
+    },
+    "duplicate_ids": [],
+    "lesion_leaks": [],
+    "metadata_file": null,
+    "metadata_status": "Regroupements par lésion non vérifiés : métadonnées absentes.",
+    "split_sha256": "fa450ae77d666d1a2edbb5740df71f5710295cc3841401c7f6c603fd5fc87395"
+  },
+  "scope": "Sous-ensemble local sélectionné, pas une performance finale du test complet.",
+  "means": {
+    "vgg": {
+      "dice": 0.965538693796633,
+      "iou": 0.93337342634913
+    },
+    "deep": {
+      "dice": 0.974220450110211,
+      "iou": 0.9497366663381839
+    },
+    "fused": {
+      "dice": 0.970319936633531,
+      "iou": 0.9423509021444351
+    }
+  }
+}

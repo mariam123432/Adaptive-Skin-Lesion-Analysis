@@ -1,0 +1,167 @@
+{
+  "task": "classification",
+  "count": 1,
+  "audit": {
+    "split_file": "C:\\Users\\ASUS\\Desktop\\Adaptive-Skin-Lesion-Analysis_structure_locale\\Adaptive-Skin-Lesion-Analysis-ready\\results\\paper_2021\\task3_splits.csv",
+    "all_test": true,
+    "generalization_eligible": false,
+    "message": "Identifiants vérifiés dans la partition test exportée ; sous-ensemble local.",
+    "membership": {
+      "ISIC_0026089": [
+        "test"
+      ]
+    },
+    "duplicate_ids": [],
+    "lesion_leaks": [],
+    "metadata_file": null,
+    "metadata_status": "Regroupements par lésion non vérifiés : métadonnées absentes.",
+    "split_sha256": "573affa0281f782fe828488db657ba9d503d9cc4d7292b4f1cfd933452651646"
+  },
+  "scope": "Sous-ensemble local sélectionné, pas une performance finale du test complet.",
+  "accuracy": 1.0,
+  "balanced_accuracy": 1.0,
+  "macro_f1": 0.14285714285714285,
+  "macro_f1_labels": [
+    "MEL",
+    "NV",
+    "BCC",
+    "AKIEC",
+    "BKL",
+    "DF",
+    "VASC"
+  ],
+  "balanced_accuracy_labels_present": [
+    "MEL"
+  ],
+  "report": {
+    "MEL": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1.0
+    },
+    "NV": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "BCC": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "AKIEC": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "BKL": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "DF": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "VASC": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 0.14285714285714285,
+      "recall": 0.14285714285714285,
+      "f1-score": 0.14285714285714285,
+      "support": 1.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "class_order": [
+    "MEL",
+    "NV",
+    "BCC",
+    "AKIEC",
+    "BKL",
+    "DF",
+    "VASC"
+  ]
+}

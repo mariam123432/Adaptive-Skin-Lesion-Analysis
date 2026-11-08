@@ -1,0 +1,18 @@
+{
+  "source": "ISIC_0001181.jpg",
+  "device": "cpu",
+  "model_files": {
+    "vgg": "C:\\Users\\ASUS\\Desktop\\Adaptive-Skin-Lesion-Analysis_structure_locale\\Adaptive-Skin-Lesion-Analysis-ready\\models\\paper_2021\\vgg19_unet_best.pth",
+    "deep": "C:\\Users\\ASUS\\Desktop\\Adaptive-Skin-Lesion-Analysis_structure_locale\\Adaptive-Skin-Lesion-Analysis-ready\\models\\paper_2021\\deeplabv3plus_best.pth"
+  },
+  "inference_size": [
+    224,
+    224
+  ],
+  "shades_of_gray_p": 6,
+  "normalization": "ImageNet mean/std",
+  "segmentation_threshold": 0.5,
+  "fusion": "mean(probability_vgg, probability_deep)",
+  "mask_resize": "threshold at 224x224 then nearest-neighbor to native size",
+  "note": "Prototype expérimental de recherche — ne constitue pas un diagnostic médical."
+}

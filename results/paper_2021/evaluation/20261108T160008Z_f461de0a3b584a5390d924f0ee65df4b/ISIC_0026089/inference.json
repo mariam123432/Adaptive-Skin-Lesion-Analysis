@@ -1,0 +1,76 @@
+{
+  "source": "ISIC_0026089.jpg",
+  "created_at_utc": "2026-11-08T16:00:09.075521+00:00",
+  "predicted_class": "MEL",
+  "class_index": 0,
+  "classes": [
+    "MEL",
+    "NV",
+    "BCC",
+    "AKIEC",
+    "BKL",
+    "DF",
+    "VASC"
+  ],
+  "device": "cpu",
+  "input_shape": [
+    450,
+    600,
+    3
+  ],
+  "inference_size": [
+    224,
+    224
+  ],
+  "shades_of_gray_p": 6,
+  "normalization": "ImageNet mean/std",
+  "segmentation_threshold": 0.5,
+  "fusion": "mean(probability_vgg, probability_deep)",
+  "mask_resize": "threshold at 224x224 then nearest-neighbor to native size",
+  "manual_feature_dim": 200,
+  "embedding_dims": [
+    512,
+    512
+  ],
+  "svm_feature_dim": 1024,
+  "embedding_order": [
+    "ResNet50",
+    "DenseNet201"
+  ],
+  "model_files": {
+    "vgg": "C:\\Users\\ASUS\\Desktop\\Adaptive-Skin-Lesion-Analysis_structure_locale\\Adaptive-Skin-Lesion-Analysis-ready\\models\\paper_2021\\vgg19_unet_best.pth",
+    "deep": "C:\\Users\\ASUS\\Desktop\\Adaptive-Skin-Lesion-Analysis_structure_locale\\Adaptive-Skin-Lesion-Analysis-ready\\models\\paper_2021\\deeplabv3plus_best.pth",
+    "resnet": "C:\\Users\\ASUS\\Desktop\\Adaptive-Skin-Lesion-Analysis_structure_locale\\Adaptive-Skin-Lesion-Analysis-ready\\models\\paper_2021\\hybrid_resnet50_best.pth",
+    "densenet": "C:\\Users\\ASUS\\Desktop\\Adaptive-Skin-Lesion-Analysis_structure_locale\\Adaptive-Skin-Lesion-Analysis-ready\\models\\paper_2021\\hybrid_densenet201_best.pth",
+    "scaler": "C:\\Users\\ASUS\\Desktop\\Adaptive-Skin-Lesion-Analysis_structure_locale\\Adaptive-Skin-Lesion-Analysis-ready\\models\\paper_2021\\handcrafted_scaler.joblib",
+    "svm": "C:\\Users\\ASUS\\Desktop\\Adaptive-Skin-Lesion-Analysis_structure_locale\\Adaptive-Skin-Lesion-Analysis-ready\\models\\paper_2021\\hybrid_final_svm.joblib",
+    "config": "C:\\Users\\ASUS\\Desktop\\Adaptive-Skin-Lesion-Analysis_structure_locale\\Adaptive-Skin-Lesion-Analysis-ready\\models\\paper_2021\\hybrid_final_svm_config.json"
+  },
+  "load_seconds": 10.015348299988545,
+  "timings_seconds": {
+    "preprocessing": 0.010145900014322251,
+    "segmentation": 0.29816849998314865,
+    "manual_features": 0.019790299993474036,
+    "classification": 0.2077696000051219,
+    "total": 0.54844100002083
+  },
+  "configuration": {
+    "C": 0.1,
+    "kernel": "rbf",
+    "classes": [
+      "MEL",
+      "NV",
+      "BCC",
+      "AKIEC",
+      "BKL",
+      "DF",
+      "VASC"
+    ],
+    "val_balanced_accuracy": 0.7850993227552626,
+    "feature_source": "two_hybrid_CNN_embeddings_512x2",
+    "manual_features": "adapted_handcrafted200"
+  },
+  "empty_mask": false,
+  "note": "Prototype expérimental de recherche — ne constitue pas un diagnostic médical.",
+  "implementation": "Adaptation expérimentale ; handcrafted200 non identique au descripteur original du papier."
+}
